@@ -1,7 +1,10 @@
 package com.udacity.asteroidradar.api
 
 import com.udacity.asteroidradar.Constants
-import com.udacity.asteroidradar.models.Asteroid
+import com.udacity.asteroidradar.api.models.NetworkImageOfDay
+import com.udacity.asteroidradar.database.entities.ImageOfDayEntity
+import com.udacity.asteroidradar.repository.models.Asteroid
+import com.udacity.asteroidradar.repository.models.ImageOfDay
 import org.json.JSONObject
 import java.text.SimpleDateFormat
 import java.util.*
@@ -71,4 +74,12 @@ fun getOneWeekAheadDateFormatted(): String {
     val dateFormat = SimpleDateFormat(Constants.API_QUERY_DATE_FORMAT, Locale.getDefault())
 
     return dateFormat.format(currentTime)
+}
+
+fun NetworkImageOfDay.toDomainModel(): ImageOfDay {
+    return ImageOfDay(
+            mediaType = this.mediaType,
+            title = this.title,
+            url = this.url
+    )
 }

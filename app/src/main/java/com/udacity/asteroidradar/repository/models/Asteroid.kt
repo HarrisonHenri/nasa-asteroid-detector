@@ -1,4 +1,4 @@
-package com.udacity.asteroidradar.models
+package com.udacity.asteroidradar.repository.models
 
 import android.os.Parcelable
 
