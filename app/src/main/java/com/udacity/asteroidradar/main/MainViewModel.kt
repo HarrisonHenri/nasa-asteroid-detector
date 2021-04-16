@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import com.udacity.asteroidradar.Constants.FrequencyFilter
 import com.udacity.asteroidradar.database.getDatabase
 import com.udacity.asteroidradar.repository.AsteroidRepository
 import com.udacity.asteroidradar.repository.ImageOfDayRepository
@@ -31,6 +32,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     val imageOfDay = imageOfDayRepository.imageOfDay
     val asteroidList = asteroidRepository.asteroids
+
+    fun onChnageFilter(frequencyFilter: FrequencyFilter) {
+        asteroidRepository.changeFrequencyFilter(frequencyFilter)
+    }
 
     fun asteroidClicked(asteroid: Asteroid){
         _navigateToAsteroidDetails.value = asteroid

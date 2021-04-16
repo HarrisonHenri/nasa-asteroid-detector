@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
+import com.udacity.asteroidradar.Constants.FrequencyFilter
 import com.udacity.asteroidradar.R
 import com.udacity.asteroidradar.databinding.FragmentMainBinding
 
@@ -44,6 +45,11 @@ class MainFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.weekly_asteroids -> viewModel.onChnageFilter(FrequencyFilter.WEEKLY)
+            R.id.daily_asteroids -> viewModel.onChnageFilter(FrequencyFilter.TODAY)
+            R.id.cached_asteroids -> viewModel.onChnageFilter(FrequencyFilter.CACHED)
+        }
         return true
     }
 }
