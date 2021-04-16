@@ -7,6 +7,10 @@
         <variable
             name="asteroid"
             type="com.udacity.asteroidradar.repository.models.Asteroid" />
+
+        <variable
+            name="clickListener"
+            type="com.udacity.asteroidradar.main.AsteroidClickListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,6 +58,7 @@
             android:id="@+id/clickableOverlay"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:onClick="@{() -> clickListener.onClick(asteroid)}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
