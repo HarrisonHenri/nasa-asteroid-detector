@@ -16,7 +16,7 @@
         android:background="@color/app_background">
 
         <ImageView
-            android:id="@+id/activity_main_image_of_the_day"
+            android:id="@+id/fragment_detail_asteroid_status_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
@@ -24,6 +24,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/fragment_detail_asteroid_status_image"
             tools:srcCompat="@drawable/asteroid_safe" />
 
         <ScrollView
@@ -32,7 +33,7 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/activity_main_image_of_the_day">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_detail_asteroid_status_image">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -94,6 +95,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="16dp"
+                        android:contentDescription="@string/fragment_detail_help_icon"
                         app:srcCompat="@drawable/ic_help_circle" />
 
                 </LinearLayout>
