@@ -1,4 +1,4 @@
-# The Shoe Store
+# Nasa Asteroid Detector
 
 ## About this Project
 
