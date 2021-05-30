@@ -44,6 +44,12 @@ $ git clone https://github.com/HarrisonHenri/nasa-asteroid-detector
 * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
 * [Data Binding](https://developer.android.com/topic/libraries/data-binding/) with binding adapters
 * [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/) with the SafeArgs plugin for parameter passing between fragments
+* [Moshi](https://github.com/square/moshi) 
+* [Retrofit2](https://square.github.io/retrofit/) 
+* [Coroutines](https://developer.android.com/kotlin/coroutines) 
+* [Recycler View](https://developer.android.com/guide/topics/ui/layout/recyclerview) 
+* [Room](https://developer.android.com/jetpack/androidx/releases/room?gclid=Cj0KCQjw78yFBhCZARIsAOxgSx0aOuUsaoZge4mm8WqKB-0Hi-tA7-WMLFxfAm-yb9NJsh6rphlp2ScaAovQEALw_wcB&gclsrc=aw.ds) 
+* [Picasso](https://square.github.io/picasso/) 
 
 ## Contributing
 
